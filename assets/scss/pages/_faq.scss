@@ -1,0 +1,34 @@
+.faq {
+    &-title {
+        padding: 60px 0 40px 0;
+    }
+
+    &-content {
+        margin-bottom: 80px;
+
+        @include pc {
+            margin-bottom: 120px;
+        }
+    }
+}
+
+.collapsed {
+    margin-bottom: 40px;
+}
+
+.accordion {
+    &-button {
+        &::after {
+            font: var(--fa-font-solid);
+            content: '\2b';
+            color: $fourth;
+        }
+
+        &:not(.collapsed) {
+            &::after {
+                font: var(--fa-font-solid);
+                content: '\f068';
+            }
+        }
+    }
+}
