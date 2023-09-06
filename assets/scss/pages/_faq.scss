@@ -1,34 +1,38 @@
 .faq {
+    padding-bottom: 80px;
+
+    @include pc {
+        padding-bottom: 120px;
+    }
+
     &-title {
         padding: 60px 0 40px 0;
     }
+}
 
-    &-content {
-        margin-bottom: 80px;
+.addIcon,
+.removeIcon {
+    font-size: 40px;
+}
 
-        @include pc {
-            margin-bottom: 120px;
+.accordion-button {
+    &.collapsed {
+        .addIcon {
+            display: block;
+        }
+
+        .removeIcon {
+            display: none;
         }
     }
-}
 
-.collapsed {
-    margin-bottom: 40px;
-}
-
-.accordion {
-    &-button {
-        &::after {
-            font: var(--fa-font-solid);
-            content: '\2b';
-            color: $fourth;
+    &:not(.collapsed) {
+        .addIcon {
+            display: none;
         }
 
-        &:not(.collapsed) {
-            &::after {
-                font: var(--fa-font-solid);
-                content: '\f068';
-            }
+        .removeIcon {
+            display: block;
         }
     }
 }

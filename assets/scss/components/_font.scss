@@ -5,3 +5,17 @@
 .shrikhand{
     font-family: 'Shrikhand';
 }
+
+.fs-40{
+    font-size: 40px;
+}
+
+.fs-64{
+    font-size: 64px;
+}
+
+.fs-lg-64{
+    @include pc {
+        font-size: 64px;
+    }
+}

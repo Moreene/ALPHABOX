@@ -1082,8 +1082,8 @@ $form-file-button-hover-bg:       var(--#{$prefix}secondary-bg) !default;
 // scss-docs-start form-floating-variables
 $form-floating-height:                  add(3.5rem, $input-height-border) !default;
 $form-floating-line-height:             1.25 !default;
-$form-floating-padding-x:               $input-padding-x !default;
-$form-floating-padding-y:               1rem !default;
+$form-floating-padding-x:               16px;//$input-padding-x !default; customer
+$form-floating-padding-y:               8px;//1rem !default; customer
 $form-floating-input-padding-t:         1.625rem !default;
 $form-floating-input-padding-b:         .625rem !default;
 $form-floating-label-height:            1.5em !default;

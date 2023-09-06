@@ -1,7 +1,23 @@
-.ls-16{
+.ls-16 {
     letter-spacing: 1.6px;
 }
 
-.ls-48{
+.ls-40 {
+    letter-spacing: 40px;
+}
+
+.ls-48 {
     letter-spacing: 48px;
+}
+
+.ls-md-64 {
+    @include pad {
+        letter-spacing: 64px;
+    }
+}
+
+.ls-lg-64{
+    @include pc {
+        letter-spacing: 64px;
+    }
 }
